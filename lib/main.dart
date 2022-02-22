@@ -5,15 +5,12 @@ void main() {
     home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          backgroundColor: Colors.teal.shade400,
+          backgroundColor: Colors.teal.shade500,
           title: const Text(
-            "THE BEST PROJECT",
-            style: TextStyle(fontSize: 32) ,
+            "КОШАЧЬЯ ВЕЧЕРИНКА",
+            style: TextStyle(fontSize: 30) ,
         ),
         ),
-
-
-
 
 
         body: Container(
@@ -27,16 +24,18 @@ void main() {
           //margin: EdgeInsets.only(left: 30, top: 50),
           alignment: Alignment.center,
 
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround ,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children:  <Widget>[
-              Icon (Icons.account_circle_outlined, size: 50,color: Colors.black,),
-              Icon (Icons.add_a_photo_outlined, size: 50,color: Colors.black,),
-              Icon (Icons.add_call, size: 50,color: Colors.black,),
-              Image(image: AssetImage('assets/images/pngegg.png')),
+            child: Column(children: [Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround ,
+              crossAxisAlignment: CrossAxisAlignment.baseline,
+              children:  <Widget>[
+                Icon (Icons.account_circle_outlined, size: 50,color: Colors.black,),
+                Icon (Icons.add_a_photo_outlined, size: 50,color: Colors.black,),
+                Icon (Icons.add_call, size: 50,color: Colors.black,),
+              ],
+            ),Image(image: AssetImage('assets/images/pngegg.png')),
+              Image(image: AssetImage('assets/images/pngwing.com.png')),
             ],
-          ),
+            )
 
         ),
     ),
